@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB330D6719191F7B00118051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D6619191F7B00118051 /* Foundation.framework */; };
+		BB330D6919191F7B00118051 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D6819191F7B00118051 /* CoreGraphics.framework */; };
+		BB330D6B19191F7B00118051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D6A19191F7B00118051 /* UIKit.framework */; };
+		BB330D7119191F7B00118051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB330D6F19191F7B00118051 /* InfoPlist.strings */; };
+		BB330D7319191F7B00118051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330D7219191F7B00118051 /* main.m */; };
+		BB330D7719191F7B00118051 /* GEOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330D7619191F7B00118051 /* GEOAppDelegate.m */; };
+		BB330D7919191F7B00118051 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB330D7819191F7B00118051 /* Images.xcassets */; };
+		BB330D8019191F7B00118051 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D7F19191F7B00118051 /* XCTest.framework */; };
+		BB330D8119191F7B00118051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D6619191F7B00118051 /* Foundation.framework */; };
+		BB330D8219191F7B00118051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D6A19191F7B00118051 /* UIKit.framework */; };
+		BB330D8A19191F7B00118051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB330D8819191F7B00118051 /* InfoPlist.strings */; };
+		BB330D8C19191F7B00118051 /* iOSGeoServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330D8B19191F7B00118051 /* iOSGeoServerTests.m */; };
+		BB330D9619191F9900118051 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330D9519191F9900118051 /* CFNetwork.framework */; };
+		BB330D9A1919207C00118051 /* Web in Resources */ = {isa = PBXBuildFile; fileRef = BB330D981919207100118051 /* Web */; };
+		BB330DB11919211C00118051 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DB01919211C00118051 /* GCDAsyncSocket.m */; };
+		BB330DD61919232C00118051 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DCD1919232C00118051 /* DDAbstractDatabaseLogger.m */; };
+		BB330DD71919232C00118051 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DCF1919232C00118051 /* DDASLLogger.m */; };
+		BB330DD81919232C00118051 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DD11919232C00118051 /* DDFileLogger.m */; };
+		BB330DD91919232C00118051 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DD31919232C00118051 /* DDLog.m */; };
+		BB330DDA1919232C00118051 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DD51919232C00118051 /* DDTTYLogger.m */; };
+		BB330DDF1919233C00118051 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DDC1919233C00118051 /* ContextFilterLogFormatter.m */; };
+		BB330DE01919233C00118051 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DDE1919233C00118051 /* DispatchQueueLogFormatter.m */; };
+		BB330E091919237200118051 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DE41919237200118051 /* DDData.m */; };
+		BB330E0A1919237200118051 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DE61919237200118051 /* DDNumber.m */; };
+		BB330E0B1919237200118051 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DE81919237200118051 /* DDRange.m */; };
+		BB330E0C1919237200118051 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DEA1919237200118051 /* HTTPAuthenticationRequest.m */; };
+		BB330E0D1919237200118051 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DEC1919237200118051 /* HTTPConnection.m */; };
+		BB330E0E1919237200118051 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DEF1919237200118051 /* HTTPMessage.m */; };
+		BB330E0F1919237200118051 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DF21919237200118051 /* HTTPServer.m */; };
+		BB330E101919237200118051 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DF51919237200118051 /* MultipartFormDataParser.m */; };
+		BB330E111919237200118051 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DF71919237200118051 /* MultipartMessageHeader.m */; };
+		BB330E121919237200118051 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DF91919237200118051 /* MultipartMessageHeaderField.m */; };
+		BB330E131919237200118051 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DFC1919237200118051 /* HTTPAsyncFileResponse.m */; };
+		BB330E141919237200118051 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330DFE1919237200118051 /* HTTPDataResponse.m */; };
+		BB330E151919237200118051 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330E001919237200118051 /* HTTPDynamicFileResponse.m */; };
+		BB330E161919237200118051 /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330E021919237200118051 /* HTTPErrorResponse.m */; };
+		BB330E171919237200118051 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330E041919237200118051 /* HTTPFileResponse.m */; };
+		BB330E181919237200118051 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330E061919237200118051 /* HTTPRedirectResponse.m */; };
+		BB330E191919237200118051 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330E081919237200118051 /* WebSocket.m */; };
+		BB330E1E191926A200118051 /* libgdal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330E1A191926A200118051 /* libgdal.a */; };
+		BB330E1F191926A200118051 /* libgeos_c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330E1B191926A200118051 /* libgeos_c.a */; };
+		BB330E20191926A200118051 /* libgeos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330E1C191926A200118051 /* libgeos.a */; };
+		BB330E21191926A200118051 /* libproj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330E1D191926A200118051 /* libproj.a */; };
+		BB330E23191926B000118051 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB330E22191926B000118051 /* libstdc++.6.dylib */; };
+		BB330E251919295900118051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB330E241919295900118051 /* Main.storyboard */; };
+		BB330E28191929CF00118051 /* GEOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB330E27191929CF00118051 /* GEOViewController.m */; };
+		BB370D26191D78A000B5F2A2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BB370D25191D78A000B5F2A2 /* OrderedDictionary.m */; };
+		BB57D44219194A9700E61590 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB57D44119194A9700E61590 /* libz.dylib */; };
+		BB57D44419194AA200E61590 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB57D44319194AA200E61590 /* libiconv.dylib */; };
+		BB57D44619194AAC00E61590 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB57D44519194AAC00E61590 /* libsqlite3.dylib */; };
+		BB57D44819194AB500E61590 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB57D44719194AB500E61590 /* libxml2.dylib */; };
+		BB57D46919194B6500E61590 /* HTTPResponseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D45E19194B6500E61590 /* HTTPResponseProxy.m */; };
+		BB57D46A19194B6500E61590 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D46019194B6500E61590 /* Route.m */; };
+		BB57D46B19194B6500E61590 /* RouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D46219194B6500E61590 /* RouteRequest.m */; };
+		BB57D46C19194B6500E61590 /* RouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D46419194B6500E61590 /* RouteResponse.m */; };
+		BB57D46D19194B6500E61590 /* RoutingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D46619194B6500E61590 /* RoutingConnection.m */; };
+		BB57D46E19194B6500E61590 /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D46819194B6500E61590 /* RoutingHTTPServer.m */; };
+		BB57D47119197EFE00E61590 /* GEOJSONWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB57D47019197EFE00E61590 /* GEOJSONWriter.m */; };
+		BB6E7CC51933B61100385424 /* Geodata in Resources */ = {isa = PBXBuildFile; fileRef = BB6E7CC41933B61100385424 /* Geodata */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB330D8319191F7B00118051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB330D5B19191F7B00118051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB330D6219191F7B00118051;
+			remoteInfo = iOSGeoServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB330D6319191F7B00118051 /* iOSGeoServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGeoServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB330D6619191F7B00118051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB330D6819191F7B00118051 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB330D6A19191F7B00118051 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BB330D6E19191F7B00118051 /* iOSGeoServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSGeoServer-Info.plist"; sourceTree = "<group>"; };
+		BB330D7019191F7B00118051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB330D7219191F7B00118051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB330D7419191F7B00118051 /* iOSGeoServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSGeoServer-Prefix.pch"; sourceTree = "<group>"; };
+		BB330D7519191F7B00118051 /* GEOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEOAppDelegate.h; sourceTree = "<group>"; };
+		BB330D7619191F7B00118051 /* GEOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEOAppDelegate.m; sourceTree = "<group>"; };
+		BB330D7819191F7B00118051 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB330D7E19191F7B00118051 /* iOSGeoServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSGeoServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB330D7F19191F7B00118051 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BB330D8719191F7B00118051 /* iOSGeoServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSGeoServerTests-Info.plist"; sourceTree = "<group>"; };
+		BB330D8919191F7B00118051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB330D8B19191F7B00118051 /* iOSGeoServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSGeoServerTests.m; sourceTree = "<group>"; };
+		BB330D9519191F9900118051 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BB330D981919207100118051 /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
+		BB330DAF1919211C00118051 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = CocoaHTTPServer/Vendor/CocoaAsyncSocket/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		BB330DB01919211C00118051 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = CocoaHTTPServer/Vendor/CocoaAsyncSocket/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		BB330DCC1919232C00118051 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		BB330DCD1919232C00118051 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		BB330DCE1919232C00118051 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDASLLogger.h; sourceTree = "<group>"; };
+		BB330DCF1919232C00118051 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDASLLogger.m; sourceTree = "<group>"; };
+		BB330DD01919232C00118051 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDFileLogger.h; sourceTree = "<group>"; };
+		BB330DD11919232C00118051 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
+		BB330DD21919232C00118051 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDLog.h; sourceTree = "<group>"; };
+		BB330DD31919232C00118051 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDLog.m; sourceTree = "<group>"; };
+		BB330DD41919232C00118051 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
+		BB330DD51919232C00118051 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
+		BB330DDB1919233C00118051 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextFilterLogFormatter.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/Extensions/ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		BB330DDC1919233C00118051 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContextFilterLogFormatter.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/Extensions/ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		BB330DDD1919233C00118051 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DispatchQueueLogFormatter.h; path = CocoaHTTPServer/Vendor/CocoaLumberjack/Extensions/DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		BB330DDE1919233C00118051 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DispatchQueueLogFormatter.m; path = CocoaHTTPServer/Vendor/CocoaLumberjack/Extensions/DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		BB330DE31919237200118051 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		BB330DE41919237200118051 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		BB330DE51919237200118051 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		BB330DE61919237200118051 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		BB330DE71919237200118051 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		BB330DE81919237200118051 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		BB330DE91919237200118051 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPAuthenticationRequest.h; path = CocoaHTTPServer/Core/HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		BB330DEA1919237200118051 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPAuthenticationRequest.m; path = CocoaHTTPServer/Core/HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		BB330DEB1919237200118051 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPConnection.h; path = CocoaHTTPServer/Core/HTTPConnection.h; sourceTree = "<group>"; };
+		BB330DEC1919237200118051 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPConnection.m; path = CocoaHTTPServer/Core/HTTPConnection.m; sourceTree = "<group>"; };
+		BB330DED1919237200118051 /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPLogging.h; path = CocoaHTTPServer/Core/HTTPLogging.h; sourceTree = "<group>"; };
+		BB330DEE1919237200118051 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPMessage.h; path = CocoaHTTPServer/Core/HTTPMessage.h; sourceTree = "<group>"; };
+		BB330DEF1919237200118051 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPMessage.m; path = CocoaHTTPServer/Core/HTTPMessage.m; sourceTree = "<group>"; };
+		BB330DF01919237200118051 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponse.h; path = CocoaHTTPServer/Core/HTTPResponse.h; sourceTree = "<group>"; };
+		BB330DF11919237200118051 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPServer.h; path = CocoaHTTPServer/Core/HTTPServer.h; sourceTree = "<group>"; };
+		BB330DF21919237200118051 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = CocoaHTTPServer/Core/HTTPServer.m; sourceTree = "<group>"; };
+		BB330DF41919237200118051 /* MultipartFormDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartFormDataParser.h; sourceTree = "<group>"; };
+		BB330DF51919237200118051 /* MultipartFormDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartFormDataParser.m; sourceTree = "<group>"; };
+		BB330DF61919237200118051 /* MultipartMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeader.h; sourceTree = "<group>"; };
+		BB330DF71919237200118051 /* MultipartMessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeader.m; sourceTree = "<group>"; };
+		BB330DF81919237200118051 /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		BB330DF91919237200118051 /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		BB330DFB1919237200118051 /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		BB330DFC1919237200118051 /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		BB330DFD1919237200118051 /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		BB330DFE1919237200118051 /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		BB330DFF1919237200118051 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		BB330E001919237200118051 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		BB330E011919237200118051 /* HTTPErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPErrorResponse.h; sourceTree = "<group>"; };
+		BB330E021919237200118051 /* HTTPErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPErrorResponse.m; sourceTree = "<group>"; };
+		BB330E031919237200118051 /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		BB330E041919237200118051 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		BB330E051919237200118051 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		BB330E061919237200118051 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		BB330E071919237200118051 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebSocket.h; path = CocoaHTTPServer/Core/WebSocket.h; sourceTree = "<group>"; };
+		BB330E081919237200118051 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebSocket.m; path = CocoaHTTPServer/Core/WebSocket.m; sourceTree = "<group>"; };
+		BB330E1A191926A200118051 /* libgdal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgdal.a; path = ../../../../../../opt/ios/lib/libgdal.a; sourceTree = "<group>"; };
+		BB330E1B191926A200118051 /* libgeos_c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeos_c.a; path = ../../../../../../opt/ios/lib/libgeos_c.a; sourceTree = "<group>"; };
+		BB330E1C191926A200118051 /* libgeos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgeos.a; path = ../../../../../../opt/ios/lib/libgeos.a; sourceTree = "<group>"; };
+		BB330E1D191926A200118051 /* libproj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libproj.a; path = ../../../../../../opt/ios/lib/libproj.a; sourceTree = "<group>"; };
+		BB330E22191926B000118051 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		BB330E241919295900118051 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BB330E26191929CF00118051 /* GEOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOViewController.h; sourceTree = "<group>"; };
+		BB330E27191929CF00118051 /* GEOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOViewController.m; sourceTree = "<group>"; };
+		BB370D24191D78A000B5F2A2 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		BB370D25191D78A000B5F2A2 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		BB57D44119194A9700E61590 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BB57D44319194AA200E61590 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		BB57D44519194AAC00E61590 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BB57D44719194AB500E61590 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BB57D45D19194B6500E61590 /* HTTPResponseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponseProxy.h; path = RoutingHTTPServer/Source/HTTPResponseProxy.h; sourceTree = "<group>"; };
+		BB57D45E19194B6500E61590 /* HTTPResponseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponseProxy.m; path = RoutingHTTPServer/Source/HTTPResponseProxy.m; sourceTree = "<group>"; };
+		BB57D45F19194B6500E61590 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = RoutingHTTPServer/Source/Route.h; sourceTree = "<group>"; };
+		BB57D46019194B6500E61590 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = RoutingHTTPServer/Source/Route.m; sourceTree = "<group>"; };
+		BB57D46119194B6500E61590 /* RouteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteRequest.h; path = RoutingHTTPServer/Source/RouteRequest.h; sourceTree = "<group>"; };
+		BB57D46219194B6500E61590 /* RouteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteRequest.m; path = RoutingHTTPServer/Source/RouteRequest.m; sourceTree = "<group>"; };
+		BB57D46319194B6500E61590 /* RouteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteResponse.h; path = RoutingHTTPServer/Source/RouteResponse.h; sourceTree = "<group>"; };
+		BB57D46419194B6500E61590 /* RouteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteResponse.m; path = RoutingHTTPServer/Source/RouteResponse.m; sourceTree = "<group>"; };
+		BB57D46519194B6500E61590 /* RoutingConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutingConnection.h; path = RoutingHTTPServer/Source/RoutingConnection.h; sourceTree = "<group>"; };
+		BB57D46619194B6500E61590 /* RoutingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutingConnection.m; path = RoutingHTTPServer/Source/RoutingConnection.m; sourceTree = "<group>"; };
+		BB57D46719194B6500E61590 /* RoutingHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutingHTTPServer.h; path = RoutingHTTPServer/Source/RoutingHTTPServer.h; sourceTree = "<group>"; };
+		BB57D46819194B6500E61590 /* RoutingHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutingHTTPServer.m; path = RoutingHTTPServer/Source/RoutingHTTPServer.m; sourceTree = "<group>"; };
+		BB57D46F19197EFE00E61590 /* GEOJSONWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOJSONWriter.h; sourceTree = "<group>"; };
+		BB57D47019197EFE00E61590 /* GEOJSONWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOJSONWriter.m; sourceTree = "<group>"; };
+		BB6E7CC41933B61100385424 /* Geodata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Geodata; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB330D6019191F7B00118051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB57D44819194AB500E61590 /* libxml2.dylib in Frameworks */,
+				BB57D44619194AAC00E61590 /* libsqlite3.dylib in Frameworks */,
+				BB57D44419194AA200E61590 /* libiconv.dylib in Frameworks */,
+				BB57D44219194A9700E61590 /* libz.dylib in Frameworks */,
+				BB330E23191926B000118051 /* libstdc++.6.dylib in Frameworks */,
+				BB330E1E191926A200118051 /* libgdal.a in Frameworks */,
+				BB330E1F191926A200118051 /* libgeos_c.a in Frameworks */,
+				BB330E20191926A200118051 /* libgeos.a in Frameworks */,
+				BB330E21191926A200118051 /* libproj.a in Frameworks */,
+				BB330D9619191F9900118051 /* CFNetwork.framework in Frameworks */,
+				BB330D6919191F7B00118051 /* CoreGraphics.framework in Frameworks */,
+				BB330D6B19191F7B00118051 /* UIKit.framework in Frameworks */,
+				BB330D6719191F7B00118051 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB330D7B19191F7B00118051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB330D8019191F7B00118051 /* XCTest.framework in Frameworks */,
+				BB330D8219191F7B00118051 /* UIKit.framework in Frameworks */,
+				BB330D8119191F7B00118051 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB330D5A19191F7B00118051 = {
+			isa = PBXGroup;
+			children = (
+				BB57D44919194B0A00E61590 /* Routing */,
+				BB330DCA1919230A00118051 /* Logging */,
+				BB330DE11919234E00118051 /* HTTP */,
+				BB330D9C1919209100118051 /* TCP */,
+				BB330D6C19191F7B00118051 /* iOSGeoServer */,
+				BB330D8519191F7B00118051 /* iOSGeoServerTests */,
+				BB330D6519191F7B00118051 /* Frameworks */,
+				BB330D6419191F7B00118051 /* Products */,
+				BB330D9719191F9E00118051 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		BB330D6419191F7B00118051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB330D6319191F7B00118051 /* iOSGeoServer.app */,
+				BB330D7E19191F7B00118051 /* iOSGeoServerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB330D6519191F7B00118051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB57D44719194AB500E61590 /* libxml2.dylib */,
+				BB57D44519194AAC00E61590 /* libsqlite3.dylib */,
+				BB57D44319194AA200E61590 /* libiconv.dylib */,
+				BB57D44119194A9700E61590 /* libz.dylib */,
+				BB330E22191926B000118051 /* libstdc++.6.dylib */,
+				BB330E1A191926A200118051 /* libgdal.a */,
+				BB330E1B191926A200118051 /* libgeos_c.a */,
+				BB330E1C191926A200118051 /* libgeos.a */,
+				BB330E1D191926A200118051 /* libproj.a */,
+				BB330D9519191F9900118051 /* CFNetwork.framework */,
+				BB330D6619191F7B00118051 /* Foundation.framework */,
+				BB330D6819191F7B00118051 /* CoreGraphics.framework */,
+				BB330D6A19191F7B00118051 /* UIKit.framework */,
+				BB330D7F19191F7B00118051 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB330D6C19191F7B00118051 /* iOSGeoServer */ = {
+			isa = PBXGroup;
+			children = (
+				BB370D24191D78A000B5F2A2 /* OrderedDictionary.h */,
+				BB370D25191D78A000B5F2A2 /* OrderedDictionary.m */,
+				BB330D7519191F7B00118051 /* GEOAppDelegate.h */,
+				BB330D7619191F7B00118051 /* GEOAppDelegate.m */,
+				BB330D7819191F7B00118051 /* Images.xcassets */,
+				BB330D6D19191F7B00118051 /* Supporting Files */,
+				BB330E241919295900118051 /* Main.storyboard */,
+				BB330E26191929CF00118051 /* GEOViewController.h */,
+				BB330E27191929CF00118051 /* GEOViewController.m */,
+				BB57D46F19197EFE00E61590 /* GEOJSONWriter.h */,
+				BB57D47019197EFE00E61590 /* GEOJSONWriter.m */,
+			);
+			path = iOSGeoServer;
+			sourceTree = "<group>";
+		};
+		BB330D6D19191F7B00118051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB330D6E19191F7B00118051 /* iOSGeoServer-Info.plist */,
+				BB330D6F19191F7B00118051 /* InfoPlist.strings */,
+				BB330D7219191F7B00118051 /* main.m */,
+				BB330D7419191F7B00118051 /* iOSGeoServer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB330D8519191F7B00118051 /* iOSGeoServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB330D8B19191F7B00118051 /* iOSGeoServerTests.m */,
+				BB330D8619191F7B00118051 /* Supporting Files */,
+			);
+			path = iOSGeoServerTests;
+			sourceTree = "<group>";
+		};
+		BB330D8619191F7B00118051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB330D8719191F7B00118051 /* iOSGeoServerTests-Info.plist */,
+				BB330D8819191F7B00118051 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB330D9719191F9E00118051 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB6E7CC41933B61100385424 /* Geodata */,
+				BB330D981919207100118051 /* Web */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB330D9C1919209100118051 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DAF1919211C00118051 /* GCDAsyncSocket.h */,
+				BB330DB01919211C00118051 /* GCDAsyncSocket.m */,
+			);
+			name = TCP;
+			sourceTree = "<group>";
+		};
+		BB330DCA1919230A00118051 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DCC1919232C00118051 /* DDAbstractDatabaseLogger.h */,
+				BB330DCD1919232C00118051 /* DDAbstractDatabaseLogger.m */,
+				BB330DCE1919232C00118051 /* DDASLLogger.h */,
+				BB330DCF1919232C00118051 /* DDASLLogger.m */,
+				BB330DD01919232C00118051 /* DDFileLogger.h */,
+				BB330DD11919232C00118051 /* DDFileLogger.m */,
+				BB330DD21919232C00118051 /* DDLog.h */,
+				BB330DD31919232C00118051 /* DDLog.m */,
+				BB330DD41919232C00118051 /* DDTTYLogger.h */,
+				BB330DD51919232C00118051 /* DDTTYLogger.m */,
+				BB330DCB1919231100118051 /* Extensions */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		BB330DCB1919231100118051 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DDB1919233C00118051 /* ContextFilterLogFormatter.h */,
+				BB330DDC1919233C00118051 /* ContextFilterLogFormatter.m */,
+				BB330DDD1919233C00118051 /* DispatchQueueLogFormatter.h */,
+				BB330DDE1919233C00118051 /* DispatchQueueLogFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BB330DE11919234E00118051 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DE21919237200118051 /* Categories */,
+				BB330DE91919237200118051 /* HTTPAuthenticationRequest.h */,
+				BB330DEA1919237200118051 /* HTTPAuthenticationRequest.m */,
+				BB330DEB1919237200118051 /* HTTPConnection.h */,
+				BB330DEC1919237200118051 /* HTTPConnection.m */,
+				BB330DED1919237200118051 /* HTTPLogging.h */,
+				BB330DEE1919237200118051 /* HTTPMessage.h */,
+				BB330DEF1919237200118051 /* HTTPMessage.m */,
+				BB330DF01919237200118051 /* HTTPResponse.h */,
+				BB330DF11919237200118051 /* HTTPServer.h */,
+				BB330DF21919237200118051 /* HTTPServer.m */,
+				BB330DF31919237200118051 /* Mime */,
+				BB330DFA1919237200118051 /* Responses */,
+				BB330E071919237200118051 /* WebSocket.h */,
+				BB330E081919237200118051 /* WebSocket.m */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		BB330DE21919237200118051 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DE31919237200118051 /* DDData.h */,
+				BB330DE41919237200118051 /* DDData.m */,
+				BB330DE51919237200118051 /* DDNumber.h */,
+				BB330DE61919237200118051 /* DDNumber.m */,
+				BB330DE71919237200118051 /* DDRange.h */,
+				BB330DE81919237200118051 /* DDRange.m */,
+			);
+			name = Categories;
+			path = CocoaHTTPServer/Core/Categories;
+			sourceTree = "<group>";
+		};
+		BB330DF31919237200118051 /* Mime */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DF41919237200118051 /* MultipartFormDataParser.h */,
+				BB330DF51919237200118051 /* MultipartFormDataParser.m */,
+				BB330DF61919237200118051 /* MultipartMessageHeader.h */,
+				BB330DF71919237200118051 /* MultipartMessageHeader.m */,
+				BB330DF81919237200118051 /* MultipartMessageHeaderField.h */,
+				BB330DF91919237200118051 /* MultipartMessageHeaderField.m */,
+			);
+			name = Mime;
+			path = CocoaHTTPServer/Core/Mime;
+			sourceTree = "<group>";
+		};
+		BB330DFA1919237200118051 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				BB330DFB1919237200118051 /* HTTPAsyncFileResponse.h */,
+				BB330DFC1919237200118051 /* HTTPAsyncFileResponse.m */,
+				BB330DFD1919237200118051 /* HTTPDataResponse.h */,
+				BB330DFE1919237200118051 /* HTTPDataResponse.m */,
+				BB330DFF1919237200118051 /* HTTPDynamicFileResponse.h */,
+				BB330E001919237200118051 /* HTTPDynamicFileResponse.m */,
+				BB330E011919237200118051 /* HTTPErrorResponse.h */,
+				BB330E021919237200118051 /* HTTPErrorResponse.m */,
+				BB330E031919237200118051 /* HTTPFileResponse.h */,
+				BB330E041919237200118051 /* HTTPFileResponse.m */,
+				BB330E051919237200118051 /* HTTPRedirectResponse.h */,
+				BB330E061919237200118051 /* HTTPRedirectResponse.m */,
+			);
+			name = Responses;
+			path = CocoaHTTPServer/Core/Responses;
+			sourceTree = "<group>";
+		};
+		BB57D44919194B0A00E61590 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				BB57D45D19194B6500E61590 /* HTTPResponseProxy.h */,
+				BB57D45E19194B6500E61590 /* HTTPResponseProxy.m */,
+				BB57D45F19194B6500E61590 /* Route.h */,
+				BB57D46019194B6500E61590 /* Route.m */,
+				BB57D46119194B6500E61590 /* RouteRequest.h */,
+				BB57D46219194B6500E61590 /* RouteRequest.m */,
+				BB57D46319194B6500E61590 /* RouteResponse.h */,
+				BB57D46419194B6500E61590 /* RouteResponse.m */,
+				BB57D46519194B6500E61590 /* RoutingConnection.h */,
+				BB57D46619194B6500E61590 /* RoutingConnection.m */,
+				BB57D46719194B6500E61590 /* RoutingHTTPServer.h */,
+				BB57D46819194B6500E61590 /* RoutingHTTPServer.m */,
+			);
+			name = Routing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB330D6219191F7B00118051 /* iOSGeoServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB330D8F19191F7B00118051 /* Build configuration list for PBXNativeTarget "iOSGeoServer" */;
+			buildPhases = (
+				BB330D5F19191F7B00118051 /* Sources */,
+				BB330D6019191F7B00118051 /* Frameworks */,
+				BB330D6119191F7B00118051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSGeoServer;
+			productName = iOSGeoServer;
+			productReference = BB330D6319191F7B00118051 /* iOSGeoServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB330D7D19191F7B00118051 /* iOSGeoServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB330D9219191F7B00118051 /* Build configuration list for PBXNativeTarget "iOSGeoServerTests" */;
+			buildPhases = (
+				BB330D7A19191F7B00118051 /* Sources */,
+				BB330D7B19191F7B00118051 /* Frameworks */,
+				BB330D7C19191F7B00118051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB330D8419191F7B00118051 /* PBXTargetDependency */,
+			);
+			name = iOSGeoServerTests;
+			productName = iOSGeoServerTests;
+			productReference = BB330D7E19191F7B00118051 /* iOSGeoServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB330D5B19191F7B00118051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GEO;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					BB330D7D19191F7B00118051 = {
+						TestTargetID = BB330D6219191F7B00118051;
+					};
+				};
+			};
+			buildConfigurationList = BB330D5E19191F7B00118051 /* Build configuration list for PBXProject "iOSGeoServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB330D5A19191F7B00118051;
+			productRefGroup = BB330D6419191F7B00118051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB330D6219191F7B00118051 /* iOSGeoServer */,
+				BB330D7D19191F7B00118051 /* iOSGeoServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB330D6119191F7B00118051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB330D9A1919207C00118051 /* Web in Resources */,
+				BB6E7CC51933B61100385424 /* Geodata in Resources */,
+				BB330D7119191F7B00118051 /* InfoPlist.strings in Resources */,
+				BB330D7919191F7B00118051 /* Images.xcassets in Resources */,
+				BB330E251919295900118051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB330D7C19191F7B00118051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB330D8A19191F7B00118051 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB330D5F19191F7B00118051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB57D46919194B6500E61590 /* HTTPResponseProxy.m in Sources */,
+				BB330DD91919232C00118051 /* DDLog.m in Sources */,
+				BB330DDF1919233C00118051 /* ContextFilterLogFormatter.m in Sources */,
+				BB330E141919237200118051 /* HTTPDataResponse.m in Sources */,
+				BB330E0A1919237200118051 /* DDNumber.m in Sources */,
+				BB57D46E19194B6500E61590 /* RoutingHTTPServer.m in Sources */,
+				BB330E151919237200118051 /* HTTPDynamicFileResponse.m in Sources */,
+				BB330E0C1919237200118051 /* HTTPAuthenticationRequest.m in Sources */,
+				BB330E0D1919237200118051 /* HTTPConnection.m in Sources */,
+				BB370D26191D78A000B5F2A2 /* OrderedDictionary.m in Sources */,
+				BB57D46C19194B6500E61590 /* RouteResponse.m in Sources */,
+				BB330E161919237200118051 /* HTTPErrorResponse.m in Sources */,
+				BB57D47119197EFE00E61590 /* GEOJSONWriter.m in Sources */,
+				BB330E0B1919237200118051 /* DDRange.m in Sources */,
+				BB57D46B19194B6500E61590 /* RouteRequest.m in Sources */,
+				BB330DD81919232C00118051 /* DDFileLogger.m in Sources */,
+				BB330DB11919211C00118051 /* GCDAsyncSocket.m in Sources */,
+				BB330E121919237200118051 /* MultipartMessageHeaderField.m in Sources */,
+				BB330E0F1919237200118051 /* HTTPServer.m in Sources */,
+				BB330D7719191F7B00118051 /* GEOAppDelegate.m in Sources */,
+				BB57D46A19194B6500E61590 /* Route.m in Sources */,
+				BB330E181919237200118051 /* HTTPRedirectResponse.m in Sources */,
+				BB330DDA1919232C00118051 /* DDTTYLogger.m in Sources */,
+				BB330DD71919232C00118051 /* DDASLLogger.m in Sources */,
+				BB330E091919237200118051 /* DDData.m in Sources */,
+				BB330D7319191F7B00118051 /* main.m in Sources */,
+				BB57D46D19194B6500E61590 /* RoutingConnection.m in Sources */,
+				BB330E171919237200118051 /* HTTPFileResponse.m in Sources */,
+				BB330E28191929CF00118051 /* GEOViewController.m in Sources */,
+				BB330E111919237200118051 /* MultipartMessageHeader.m in Sources */,
+				BB330E0E1919237200118051 /* HTTPMessage.m in Sources */,
+				BB330E131919237200118051 /* HTTPAsyncFileResponse.m in Sources */,
+				BB330E101919237200118051 /* MultipartFormDataParser.m in Sources */,
+				BB330DE01919233C00118051 /* DispatchQueueLogFormatter.m in Sources */,
+				BB330DD61919232C00118051 /* DDAbstractDatabaseLogger.m in Sources */,
+				BB330E191919237200118051 /* WebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB330D7A19191F7B00118051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB330D8C19191F7B00118051 /* iOSGeoServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB330D8419191F7B00118051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB330D6219191F7B00118051 /* iOSGeoServer */;
+			targetProxy = BB330D8319191F7B00118051 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB330D6F19191F7B00118051 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB330D7019191F7B00118051 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB330D8819191F7B00118051 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB330D8919191F7B00118051 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB330D8D19191F7B00118051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB330D8E19191F7B00118051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB330D9019191F7B00118051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGeoServer/iOSGeoServer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/ios/include,
+				);
+				INFOPLIST_FILE = "iOSGeoServer/iOSGeoServer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/ios/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB330D9119191F7B00118051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGeoServer/iOSGeoServer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/ios/include,
+				);
+				INFOPLIST_FILE = "iOSGeoServer/iOSGeoServer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/ios/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BB330D9319191F7B00118051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSGeoServer.app/iOSGeoServer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGeoServer/iOSGeoServer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOSGeoServerTests/iOSGeoServerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BB330D9419191F7B00118051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSGeoServer.app/iOSGeoServer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGeoServer/iOSGeoServer-Prefix.pch";
+				INFOPLIST_FILE = "iOSGeoServerTests/iOSGeoServerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB330D5E19191F7B00118051 /* Build configuration list for PBXProject "iOSGeoServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB330D8D19191F7B00118051 /* Debug */,
+				BB330D8E19191F7B00118051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB330D8F19191F7B00118051 /* Build configuration list for PBXNativeTarget "iOSGeoServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB330D9019191F7B00118051 /* Debug */,
+				BB330D9119191F7B00118051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB330D9219191F7B00118051 /* Build configuration list for PBXNativeTarget "iOSGeoServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB330D9319191F7B00118051 /* Debug */,
+				BB330D9419191F7B00118051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB330D5B19191F7B00118051 /* Project object */;
+}
